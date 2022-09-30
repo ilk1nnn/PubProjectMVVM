@@ -1,0 +1,28 @@
+﻿<Window x:Class="PubMVVM.Views.BuyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PubMVVM.Views"
+        mc:Ignorable="d"
+        Title="BuyWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#432371" Offset="0.2"></GradientStop>
+                <GradientStop Color="#714674" Offset="0.4"></GradientStop>
+                <GradientStop Color="#9F6976" Offset="0.6"></GradientStop>
+                <GradientStop Color="#CC8B79" Offset="0.8"></GradientStop>
+                <GradientStop Color="#FAAE7B" Offset="1"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <Label Margin="400,-350,0,0" FontSize="30" Foreground="White" Content="Thanks for buying!" Height="60"></Label>
+        <Image Name="beerimage" Source="{Binding BuyPrinter.ImageP}" Width="400" Margin="-390,0,0,0"></Image>
+        <Label  Margin="400,-250,0,0" Foreground="White" Content="Total - " FontSize="30" Height="60"></Label>
+        <Label Name="totallbl"  Margin="500,-250,0,0" Foreground="White" Content="" FontSize="30" Height="60"></Label>
+        <Label Name="beername" Margin="400,122,0,82" FontSize="30" Foreground="White" Content=""/>
+
+    </Grid>
+</Window>
